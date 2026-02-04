@@ -1,0 +1,41 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "fbs",
+      "camelcase": "FlatBuffers",
+      "title": "FlatBuffers",
+      "scope": "source.fbs",
+      "file-types": [
+        "fbs"
+      ],
+      "injection-regex": "^fbs$",
+      "class-name": "TreeSitterFbs"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Flatbuffers grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "belltoy",
+        "email": "belltoy@gmail.com",
+        "url": "https://github.com/belltoy/tree-sitter-fbs"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/belltoy/tree-sitter-fbs"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
